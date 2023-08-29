@@ -29,7 +29,7 @@
                                 $countsp=loadALl_cart_count($bill['id']);
                                 $ttdh=get_ttdh($bill['bill_status']);
                                 $xoadh="index.php?act=xoadh&id=".$id;
-                                $suadh="index.php?act=suadh&id=".$id;
+                                $inhd="index.php?act=inhd&id=".$id;
                                 echo '<tr>
                                         <td><input type="checkbox" name=""></td>
                                         <td>'.$bill['id'].'</td>
@@ -41,6 +41,7 @@
                                         <td>'.$bill['ngaydathang'].'</td>
                                         <td>
                                             <a href="'.$xoadh.'"><input type="button" value="Xóa"></a>
+                                            <a href="'.$inhd.'"><input type="button" value="IN"></a>
                                             
 
                                         </td>

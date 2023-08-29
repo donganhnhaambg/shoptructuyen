@@ -40,14 +40,23 @@
         <table>
             <?php 
                 
+                // foreach($dsbl as $bl) {
+                //     extract($bl);
+                //     echo '<tr>
+                //             <td>'.$noidung.'</td>'.
+                //             '<td>'.$iduser.'</td>'.
+                //             '<td>'.$ngaybinhluan.'</td>
+                //         </tr>';
+                // }
+
                 foreach($dsbl as $bl) {
-                    extract($bl);
                     echo '<tr>
-                            <td>'.$noidung.'</td>';
-                            '<td>'.$iduser.'</td>';
-                            '<td>'.$ngaybinhluan.'</td>
-                        </tr>';
+                            <td>'.$bl['noidung'].'</td>
+                            <td>'.$bl['user'].'</td>
+                            <td>'.$bl['ngaybinhluan'].'</td>
+                          </tr>';
                 }
+                
             ?>
         </table>
             
@@ -56,7 +65,7 @@
 
         <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
             <input type="hidden" name="idpro" value="<?=$idpro?>">
-            <input type="text" name="noidung" placeholder="Tìm kiếm sản phẩm">
+            <input type="text" name="noidung" placeholder="Bình luận sản phẩm">
             <input type="submit" name="guibinhluan" value="Gửi">
         </form>
     </div>
@@ -67,6 +76,7 @@
             $idpro=$_POST['idpro'];
             $iduser=$_SESSION['user']['id'];
             $ngaybinhluan=date('h:i:sa d/m/Y');
+            date_default_timezone_set('Ho_Chi_Minh');
             insert_binhluan($noidung,$iduser,$idpro,$ngaybinhluan);
             header("Location: ".$_SERVER['HTTP_REFERER']);
         }

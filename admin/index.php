@@ -176,9 +176,14 @@
                 $listbill = loadALl_bill();
                 include "bill/listbill.php";
                 break;
+            case 'inhd':
+
+                include "bill/hoadon.php";
+                break;
             default:
                 include "home.php";
                 break;
+
         }
     }else {
         include "home.php";
