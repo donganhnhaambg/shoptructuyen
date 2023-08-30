@@ -1,4 +1,4 @@
-<div class=" row mb custom-footer">
+<div class=" row mb custom-footer" style="margin-left:0px;margin-right:0px">
   <section class="custom-footer-social">
     <div class="custom-footer-social-content">
       <div class="custom-footer-social-left">

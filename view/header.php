@@ -1,9 +1,4 @@
-<?php 
 
-// $path = $_SERVER['REQUEST_SCHEME'] . "://" .$_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
-// $path = str_replace("index.php", "", $path);
-// include "global.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +7,13 @@
     <title>Shop Cong Nghe</title>
     <link rel="stylesheet" href="view/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 
 </head>
 <body>
     <div class="boxcenter" style="width:70%">
-        <div class="row mb header" style = "display:flex;background-color: aquamarine">
+        <div class="row mb header" style = "display:flex;background-color: aquamarine;margin-left:0px;margin-right:0px">
             <div><h1><a style="text-decoration: none;font-size:30px" href="index.php">SIÊU THỊ TRỰC TUYẾN</a></h1></div>
             <div class="boxfooter searchbox" style = "background-color: transparent; margin-top:10px ; border:none;">
             <form action="index.php?act=sanpham" method="post" style = "display:flex">
@@ -30,7 +27,7 @@
             <div style = "background-color: white; margin:23px 0; padding :5px ;border: 1px solid #3d30e9;border-radius:5px " ><a style="text-decoration: none" href="index.php?act=viewcart">Giỏ hàng</a></div>          
 
         </div>
-        <div class="row mb menu" style= "padding:13px" >
+        <div class="row mb menu" style= "padding:13px;margin-left:0px;margin-right:0px">
             <ul>
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>

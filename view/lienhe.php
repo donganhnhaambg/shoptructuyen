@@ -71,9 +71,9 @@ background:#CC4949;
     </style>
 </head>
 <body>
-<div class="row">
+<div class="row"style="margin-left:0px;margin-right:0px">
     <div class="boxtitle">LIÊN HỆ</div>
-    <div class="row boxcontent">
+    <div class="row boxcontent"style="margin-left:0px;margin-right:0px">
     <div class="form">
 <form action="" id="form1">
 <input type="text" id="fname" name="fname" placeholder="Họ tên"><br>

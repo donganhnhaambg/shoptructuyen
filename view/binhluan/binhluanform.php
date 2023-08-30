@@ -50,7 +50,7 @@
                 // }
 
                 foreach($dsbl as $bl) {
-                    echo '<tr>
+                    echo '<tr style="border-bottom: 2px solid grey">
                             <td>'.$bl['noidung'].'</td>
                             <td>'.$bl['user'].'</td>
                             <td>'.$bl['ngaybinhluan'].'</td>

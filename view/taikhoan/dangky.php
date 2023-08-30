@@ -1,24 +1,24 @@
 
-<div class="row mb">
+<div class="row mb"style="margin-left:0px;margin-right:0px">
             <div class="boxtrai mr"style ="display:flex">
-                <div class="row mb"style ="padding:10px">
+                <div class="row mb"style ="padding:10px;margin-left:0px;margin-right:0px">
                     
                     <div class="boxtitle"><h1>ĐĂNG KÝ THÀNH VIÊN</h1></div>
                     <div class="row boxcontent formtaikhoan">
                         <form action="index.php?act=dangky" method="post">
-                            <div class="row mb10">
+                            <div class="row mb10"style="margin-left:0px;margin-right:0px">
                                 Email
                                 <input type="email" name="email" id="" require_once>
                             </div>
-                            <div class="row mb10">
+                            <div class="row mb10" style="margin-left:0px;margin-right:0px">
                                 Usename
                                 <input type="text" name="user" id="" require_once>
                             </div>
-                            <div class="row mb10">
+                            <div class="row mb10" style="margin-left:0px;margin-right:0px">
                                 Password
                                 <input type="password" name="pass" id="" require_once>
                             </div>
-                            <div class="row mb10" style = "margin-top:20px">
+                            <div class="row mb10" style = "margin-top:20px;margin-left:0px;margin-right:0px">
                                 <input type="submit" value="Đăng ký" name="dangky">
                                 <input type="reset" value="Nhập lại">
                             </div>

@@ -1,6 +1,6 @@
-<div class="row mb">
+<div class="row mb" style="margin:0px">
             <div class="boxtrai mr">
-                <div class="row">
+                <div class="row"style="margin:0px">
                     <div class="banner mb">
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
@@ -24,7 +24,7 @@
                         
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin:0px">
                     <?php 
                         $i=0;
                         foreach($spnew as $sp) {
@@ -38,12 +38,12 @@
                             }
                             echo '<div class="boxsp '.$mr.'">
 
-                                    <div class="row img">
+                                    <div class="row img" style="margin:0px">
                                         <a href="'.$linksp.'"><img src="'.$hinh.'" alt=""><?/a>
                                     </div>
                                     <p>$'.$price.'</p>
                                     <a href="'.$linksp.'">'.$name.'</a>
-                                    <div class="row btnaddtocart">
+                                    <div class="row btnaddtocart" style="margin:0px">
                                         <form action="index.php?act=addtocart" method="post">
                                             <input type="hidden" name="id" value="'.$id.'">
                                             <input type="hidden" name="name" value="'.$name.'">

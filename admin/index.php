@@ -13,6 +13,7 @@
         switch ($act){
 
             // danh mục
+
             case 'adddm':
                 //kiểm tra nguoi dung co click nut add hay không 
                 if(isset($_POST['themmoi']) && ($_POST['themmoi'])){

@@ -1,8 +1,8 @@
 
 
-                <div class="row mb">
+                <div class="row mb" style="margin:0px">
                     <div class="boxtitle">DANH MỤC</div>
-                    <div class="boxcontent2 menudoc">
+                    <div class="boxcontent2 menudoc" style="margin-bottom:15px">
                         <ul>
                             <?php 
                                 foreach($dsdm as $dm) {
@@ -38,15 +38,15 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin:0px">
                     <div class="boxtitle">TOP 10 YÊU THÍCH</div>
-                    <div class="row boxcontent">
+                    <div class="row boxcontent "style="margin:0px">
                         <?php 
                             foreach($dstop10 as $sp) {
                                 extract($sp);
                                 $linksp="index.php?act=sanphamct&idsp=".$id;
                                 $img=$img_path.$img;
-                                echo '<div class="row mb10 top10">
+                                echo '<div class="row mb10 top10" style="margin:5px 0;border-bottom:1px solid grey;padding:20px 10px">
                                         <a href="'.$linksp.'"><img src="'.$img.'" alt=""></a>
                                         <a href="'.$linksp.'">'.$name.'</a>
                                     </div>';
